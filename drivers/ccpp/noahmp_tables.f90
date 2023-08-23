@@ -783,10 +783,9 @@ rsurf_snow_table     = -1.0e36
        open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if ( ierr /= 0 ) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
 
     if ( trim(dataset_identifier) == "usgs" ) then
@@ -914,10 +913,9 @@ rsurf_snow_table     = -1.0e36
        open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if ( ierr /= 0 ) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
     read(15, noahmp_stas_soil_categories)
     if ( trim(sltype) == "stas" ) then
@@ -957,10 +955,9 @@ rsurf_snow_table     = -1.0e36
        open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if ( ierr /= 0 ) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
     read(15, noahmp_general_parameters)
     close(15)
@@ -982,10 +979,9 @@ rsurf_snow_table     = -1.0e36
       open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if (ierr /= 0) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
     read(15,noahmp_rad_parameters)
     close(15)
@@ -1011,10 +1007,9 @@ rsurf_snow_table     = -1.0e36
       open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if (ierr /= 0) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
     read(15,noahmp_global_parameters)
     close(15)
@@ -1069,10 +1064,9 @@ rsurf_snow_table     = -1.0e36
       open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if (ierr /= 0) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
     read(15,noahmp_irrigation_parameters)
     close(15)
@@ -1096,10 +1090,9 @@ rsurf_snow_table     = -1.0e36
       open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if (ierr /= 0) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
     read(15,noahmp_crop_parameters)
     close(15)
@@ -1249,11 +1242,10 @@ rsurf_snow_table     = -1.0e36
       open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if (ierr /= 0) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
-    endif
+endif
     read(15,noahmp_tiledrain_parameters)
     close(15)
 
@@ -1278,10 +1270,9 @@ rsurf_snow_table     = -1.0e36
       open(15, status='old', form='formatted', action='read', iostat=ierr)
     end if
     if (ierr /= 0) then
-       errmsg = 'warning: cannot find file noahmptable.tb'
+       errmsg = 'warning: cannot find file noahmptable.tbl'
        errflg = 1
        return
-!      write(*,'("warning: cannot find file noahmptable.tbl")')
     endif
     read(15,noahmp_optional_parameters)
     close(15)
